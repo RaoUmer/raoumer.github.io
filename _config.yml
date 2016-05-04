@@ -1,0 +1,12 @@
+# Site settings
+title: Rao Muhammad Umer blog
+email: 
+description: "A Data Science and Machine Learning Enthusiast"
+baseurl: ""
+url: "http://raoumer.github.io"
+twitter_username: raoumer_swl
+github_username:  RaoUmer
+
+# Build settings
+markdown: redcarpet
+permalink: pretty
