@@ -3,7 +3,7 @@ title: Rao Muhammad Umer blog
 email: 
 description: "A Data Science and Machine Learning Enthusiast"
 baseurl: ""
-url: "http://raoumer.github.io/indexblog"
+url: "/indexblog/"
 twitter_username: raoumer_swl
 github_username:  RaoUmer
 
