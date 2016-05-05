@@ -1,3 +1,11 @@
+---
+layout: post
+comments: true
+title:  "Awesome RNN"
+excerpt: "Awesome Recurrent Neural Networks"
+date:   2016-05-05
+---
+
 # Awesome Recurrent Neural Networks
 
 A curated list of resources dedicated to recurrent neural networks (closely related to *deep learning*).
