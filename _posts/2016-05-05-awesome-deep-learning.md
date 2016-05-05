@@ -2,7 +2,7 @@
 layout: post
 comments: true
 title:  "Awesome Deep Learning"
-excerpt: "A good stuff fpr Deep learning beginners"
+excerpt: "A good stuff for Deep learning beginners"
 date:   2016-05-05 10:00:00
 ---
 
