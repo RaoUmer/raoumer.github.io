@@ -8,5 +8,5 @@ twitter_username: raoumer_swl
 github_username:  RaoUmer
 
 # Build settings
-markdown: redcarpet
+markdown: kramdown
 permalink: pretty
