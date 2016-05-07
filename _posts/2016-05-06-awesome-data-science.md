@@ -1,3 +1,11 @@
+---
+layout: post
+comments: true
+title:  "Awesome Data Science"
+excerpt: "A good stuff for Data Science Learners"
+date:   2016-05-05 10:00:00
+---
+
 # Awesome Data Science [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
 
