@@ -3,7 +3,7 @@ layout: post
 comments: true
 title:  "Awesome Machine Learning"
 excerpt: "A good stuff for Machine Learing Enthusiasts"
-date:   2016-05-07 10:00:00
+date:   2016-05-07 
 ---
 
 ### Awesome Machine Learning: [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/josephmisiti/awesome-machine-learning)
