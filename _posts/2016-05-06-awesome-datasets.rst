@@ -1,3 +1,11 @@
+---
+layout: post
+comments: true
+title:  "Awesome Data Sets"
+excerpt: "Publicly Avaiable Datasets"
+date:   2016-05-06 11:00:00
+---
+
 Awesome Public Datasets
 =======================
 .. image:: https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg
