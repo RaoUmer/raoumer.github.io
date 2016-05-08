@@ -333,8 +333,11 @@ Full-Width Styles
 }
 
 #map {
-    width: 1350px;
+    width: 500px;
     height: 400px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
     background-color: #CCC;
   }
 
