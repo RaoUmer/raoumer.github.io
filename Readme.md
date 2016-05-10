@@ -1,4 +1,5 @@
 # My Website and blog
 
-This is my website and blog, uses [Jekyll](http://jekyllrb.com/) for website and blog.
-
+Here is the link of my website and blog:
+[Website](http://raoumer.github.io/)
+[Blog](http://raoumer.github.io/indexblog)
