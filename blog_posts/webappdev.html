@@ -42,8 +42,8 @@
     <meta property="og:description" content="This blog post is for introducing some pioneer computer scientists reseacher in the field of Machine learning, Deep learning and Data Science in Pakistan" />
     <meta property="og:url" content="u=http://raoumer.github.io/blog_posts/webappdev.html" />
     <meta property="og:image" content="u=http://raoumer.github.io/images" />
-    <meta property="article:published_time" content="2016-06-18T14:20:00.000Z" />
-    <meta property="article:modified_time" content="2016-06-18T08:34:04.543Z" />
+    <meta property="article:published_time" content="2016-08-6T14:20:00.000Z" />
+    <meta property="article:modified_time" content="2016-08-6T08:34:04.543Z" />
     <meta property="article:tag" content="webapp" />
     <meta property="article:tag" content="webapp" />
     <meta property="article:tag" content="webapp" />
@@ -68,8 +68,8 @@
     },
     "headline": "Deploying Data Apps with Flask, Github and Heroku",
     "url": "u=http://raoumer.github.io/blog_posts/webappdev.html",
-    "datePublished": "2016-06-18T14:20:00.000Z",
-    "dateModified": "2016-06-18T08:34:04.543Z",
+    "datePublished": "2016-08-6T14:20:00.000Z",
+    "dateModified": "2016-08-6T08:34:04.543Z",
     "image": "u=http://raoumer.github.io/",
     "keywords": "deep web",
     "description": "This blog post is describing for how to deploy  Data Apps with Flask, Github and Heroku."
@@ -303,6 +303,8 @@ var profile_resume ='Graduate Student';
 		<figcaption>Image 7: Deploying webapp on Heroku (Source: <a href="https://github.com/RaoUmer/webapp-demo">webapp-demo</a>)</figcaption>  
 	</figure>
 	</p>
+	</br>
+	</br>
 	Rather than compiling from source, Conda installs from binaries, which can be noticeably faster, especially when pushing a build to Heroku. 
 	Luckily all we have to do to take advantage of Conda is add the <a href="https://github.com/kennethreitz/conda-buildpack" target="_blank">buildpack</a>:</p>
 	<figure>  
@@ -327,6 +329,8 @@ var profile_resume ='Graduate Student';
         <img src="../images/heroku10.png" alt="Deploying Data Apps with Flask, Github and Heroku" style="width: 100%; height: 100%" title="Deploying webapp on Heroku">
 		<figcaption>Image 11: Deploying webapp on Heroku (Source: <a href="https://github.com/RaoUmer/webapp-demo">webapp-demo</a>)</figcaption>  
 	</figure>
+	</br>
+	</br>
 	<p>and add a <code>conda-requirements.txt</code> to handle the install dependencies. Not everything can be installed with Conda, so we still need a  <code>requirements.txt</code> file to instruct pip to take care of the rest.</p>
 	<p>Finally, for hosting the app on Heroku, port 33507 is reserved for Flask and that worked well for us:</p>
 	<pre>
