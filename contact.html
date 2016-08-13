@@ -200,14 +200,12 @@
 	  <p>Below is the map to my current location.</p>
 	  <div id="map"></div>
 	  <script>
-		  function initMap() {
-			var mapDiv = document.getElementById('map');
-			var map = new google.maps.Map(mapDiv, {
-			  center: {lat: 33.7294, lng: 73.0931},
-			  zoom: 8
-			});
-		  }
-	   </script>
+		var mapCanvas = document.getElementById("map");
+		var mapOptions = {
+		    center: new google.maps.LatLng(33.7294, 73.0931), zoom: 10
+		}
+		var map = new google.maps.Map(mapCanvas, mapOptions);
+	</script>
 	   <script src="https://maps.googleapis.com/maps/api/js?callback=initMap"
 			 async defer></script>
     </div>
