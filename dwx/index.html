@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Deep Web Extractor</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/grayscale.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-main-collapse">
+                    <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">
+                    Deep Web Extractor
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about"> DWX launcher </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/RaoUmer">DWX Code Repos</a>
+                    </li>
+                    <li>
+                        <a href="http://raoumer.github.io">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Header -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-md-offset-2">
+                        <h1 class="brand-heading">Deep Web Extractor</h1>
+                        <p class="intro-text">Created by Rao M. Umer</p>
+                        <a href="#about" class="btn btn-circle page-scroll">
+                            <i class="fa fa-angle-double-down animated"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+
+    <section id="about" class="container content-section">
+        <div class="row">
+                <center><img src="img/deep_web.png" style="width:500px;height:250px" class="img-thumbnail"></center>
+                <br>
+                <center><p><a href="http://raoumer.github.io/dwx/dwx.pdf">DWX presentation slides</a></p></center>
+                <br>
+            <div class="col-lg-8 col-lg-offset-2">
+                <center><h2>Abstract</h2></center>
+                <p align="justify">
+					Exponential growth of Web imposes a major challenge for retrieving and searching 
+					data across the Web for many information retrieval and data mining  (i.e. text mining)
+					tasks. Since web users usually depend upon search engines such as Google, Yahoo, 
+					Bing, etc., but these search engines rely on link crawling strategies to index the static 
+					web pages  (aka Surface Web)  and lots of other massive and quality portion of web is
+					being  hidden from these engines, which is also known as the Deep Web. The immense and high quality data form 
+					the Deep Web is also useful for building knowledge based    databases.  Discovering and extracting the  vast  content from the  deep web 
+					tends to a major research challenge for knowledge discovery and information retrieval 
+					community. We explored the factors preventing typical search engines from 
+					indexing Deep Web contents & provided  the  solution  in such a way  that  Deep Web 
+					contents can be extracted  and exposed to web searchers. The proposed  DWX  system
+					has  a cloud  based  web application  for Crawling & Data Discovery from  Deep Web.
+					The  proposed  DWX  system  allowed  a web user  to set a specific query (e.g. keywords 
+					relating to  specific topic), and to retrieve the  significant  information  in  an  effective 
+					way using machine learning techniques.
+                </p>
+            </div>
+            <div class="col-lg-8 col-lg-offset-2">
+                <center><h2>Approach</h2></center>
+                <p>
+				The proposed  architecture of  system  DWX  comprises of the following major com-ponents as shown in Figure:
+				<center>DWX System Architecture<br> <img src="img/dwx.png" style="width:600px;height:300px" class="img-thumbnail"></center><br><br>
+				<p>Below a description of each component is presented:</p>
+                    <h4>User Interface:</h4>
+						<p>
+                        It presents a high level interface to the user for passing  queries.  This interface passes 
+						that query to the deep web resources related to user specified queries.
+						</p>
+					<h4>Form Classifier:</h4>
+						<p>
+                        It identifies  the web form present in a  website and check whether it is a searchable 
+						form or not. If the form is a searchable, it will identify the fields in that form.
+						</p>
+					<h4>Automated Form Filling & Submission:</h4>
+						<p>
+                        The identified searchable form field by  Form Classifier  is automated  filled with 
+						user specified query and submitted it for response.
+						</p>
+					<h4>Response Results:</h4>
+						<p>
+                        The returned response by submitting the web form is displayed to  user that is searching the required information.
+						</p>
+                </p>
+            </div> 
+            <div class="col-lg-8 col-lg-offset-2">
+                <center><h2>Results</h2></center>
+                <p>
+				Below is the DWX implementation running in real time:
+                    <center><br><img src="img/dwx.gif" style="width:720px;height:480px" class="img-thumbnail"></center><br>
+                				
+				</p>
+				<br>
+                <p>
+                    Below are some pertinent stats for the machines we used:<br>
+                    Stats for Intel(R) Core(TM) i7-3770 CPU:<br>
+                    8 cores: 3.40 GHz <br>
+                    RAM: 16 GB <br>
+					OS: Windows 7 Professional<br>
+                </p>
+            </div>  
+            <div class="col-lg-8 col-lg-offset-2">
+                <center><h2>References</h2></center>
+                <p>
+                    [1] S. Raghavan and H. Garcia-Molina, "Crawling the hidden web," 2000.<br>
+                    [2] J. Caverlee, L. Liu, and D. Buttler, "Probe, cluster, and discover: Focused extraction of qa-pagelets from the deep web," in  Data Engineering, 2004. Proceedings. 20th International Conference on, pp. 103-114.<br>
+                    [3] V. Crescenzi, G. Mecca, and P. Merialdo, "Roadrunner: Towards automatic data extraction from large web sites," in VLDB, 2001, pp. 109-118.<br>
+                    [4] J. Madhavan, D. Ko, Ł. Kot, V. Ganapathy, A. Rasmussen, and A. Halevy, "Google's deep web crawl,"  Proceedings of the VLDB Endowment,  vol. 1, pp. 1241-1252, 2008.<br>
+                    [5] L. Barbosa and J. Freire, "An adaptive crawler for locating hidden-web entry points," in  Proceedings of the 16th international conference on World Wide Web, 2007, pp. 441-450.
+                </p>
+                <center><p>Work was done at Pattern Recognition (PR) Lab, DCIS, PIEAS, Nilore, Islamabad, Pakistan.</p></center> 
+            </div> 
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container text-center">
+            <p>Copyright &copy; Rao M. Umer 2016<br>
+			   Built in Bootstrap
+			</p>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+    <!-- Google Maps API Key - Use your own API key to enable the map feature. More information on the Google Maps API can be found at https://developers.google.com/maps/ -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
+
+    <!-- Custom Theme JavaScript -->
+    <script src="js/grayscale.js"></script>
+
+</body>
+
+</html>
