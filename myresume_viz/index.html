@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta charset="utf-8">
+	
+	<!-- CSS -->
+	<link rel="stylesheet" href="css/custom_styling.css" type="text/css" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css" />
+
+	<!-- JQUERY -->
+	<script src="js/jquery-2.1.1.min.js"></script>
+		
+	<!-- Javascript -->
+	<script src="js/d3.v3.min.js"></script>
+	<script src="js/jsonp.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/underscore.min.js"></script>
+	
+	<script>
+	$( document ).ready(function() {
+	
+		start();
+
+		$('input[name=sizeradio]:radio').change(function() {
+			size = this.value;
+			def_size = size;
+			create(undefined, size, undefined);
+		});
+		
+		$('input[name=colorradio]:radio').change(function() {
+			color = this.value;
+			def_color = color;
+			allocateColor(this.value);
+		});
+		
+		$('input[name=groupradio]:radio').change(function() {
+			group = this.value;
+			def_group = group;
+			create(undefined, undefined, group);
+		});
+	});
+	</script>
+	
+	<!-- Google Analytics -->
+		
+	<!-- Facebook Open Graph tags -->
+	<meta property="og:title" content="Resume Bubble Chart"/>
+	<meta property="og:site_name" content="Resume Bubble Chart"/>
+	<meta property="og:image" content="images/vz_header.jpg"/>
+	<meta property="og:type" content="website"/>
+	<meta property="og:url" content="http://raoumer.github.io/myresume/"/>
+	<meta property="og:description" content="Interactive visualization of my resume, showing all skills and their relative strengths and experience level." />
+
+	<!-- Twitter card tags -->
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@raoumer_swl">
+	<meta name="twitter:description" content="Interactive visualization of my resume, showing all skills and their relative strengths and experience level.">
+	<meta name="twitter:title" content="Resume Bubble Chart">
+	<meta name="twitter:creator" content="@raoumer_swl">
+	<meta name="twitter:image" content="images/vz_header.jpg">
+</head>
+<body>
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="http://raoumer.github.io">Rao Muhammad Umer</a>
+			</div>
+			<!--
+			<div>
+				<ul class="nav navbar-nav">
+					<li><a href="http://brettromero.com/wordpress/visualizations/">Back to Article</a></li>
+				</ul>
+			</div>
+			-->
+		</div>
+	</nav>
+	<div class="row">
+		<div class="form">
+			<h5>Group By:</h5>
+			<div class="btn-group-vertical btn-group-sm" data-toggle="buttons">
+				<label class="btn btn-default btn-block active"><input type="radio" name="groupradio" value=undefined checked>None</label>
+				<label class="btn btn-default btn-block"><input type="radio" name="groupradio" value="Field">Field</label>
+				<label class="btn btn-default btn-block"><input type="radio" name="groupradio" value="Category">Training Method</label>	
+			</div>
+		</div>
+		<br>
+		<h5>Size By:</h5>
+		<div class="form">
+			<div class="btn-group-vertical btn-group-sm" data-toggle="buttons">
+				<label class="btn btn-default btn-block active"><input type="radio" name="sizeradio" value="exp" checked>Experience</label>
+				<label class="btn btn-default btn-block"><input type="radio" name="sizeradio" value="str">Strength</label>
+			</div>
+		</div>
+		<br>
+		<div class="form">
+			<h5>Color By:</h5>
+			<div class="btn-group-vertical btn-group-sm" data-toggle="buttons">
+				<label class="btn btn-default btn-block active"><input type="radio" name="colorradio" value="field_short" checked>Field</label>
+				<label class="btn btn-default btn-block"><input type="radio" name="colorradio" value="cat_short">Training Method</label>
+				<label class="btn btn-default btn-block"><input type="radio" name="colorradio" value="exp">Experience</label>
+				<label class="btn btn-default btn-block"><input type="radio" name="colorradio" value="str">Strength</label>	
+			</div>
+		</div>
+	</div>
+	
+	<div id="chart"></div>
+		
+	<script>
+	var def_group = '';
+	var def_size = 'exp';
+	var def_color = 'field_short';
+	var colors = {
+		field_short: {
+			econ: '#AFFFA2',
+			chem: '#FEFFA2',
+			data: '#FFC178',
+			cs: '#B7F1FF',
+			proj: '#E7B7FF'
+		},
+		str: {
+			1: '#B7F1FF',
+			4: '#AFFFA2',
+			9: '#FEFFA2',
+			16: '#E7B7FF',
+			25: '#FFC178'
+		},
+		exp: {
+			1: '#9382FC',
+			4: '#B7F1FF',
+			9: '#AFFFA2',
+			16: '#FEFFA2',
+			25: '#E7B7FF',
+			36: '#FFC178'
+		},
+		cat_short: {
+			form: '#A5A200',
+			otj: '#450E63',
+			ocst: '#A54500'
+		},
+		default: '#DFF8FF'
+	};
+	var h_border = 0.70;
+	var v_border = 0.8;
+	var radius = 70;
+	var padding = 2;
+	
+	function start() {
+		$.ajax({
+			'url': "data.json",
+			'dataType': 'json',
+			'responseJSON': 'data',
+			'success': function (data) {
+				create(data, undefined, undefined);
+			}
+		});
+	};
+			
+	function create(new_data, new_size, new_group) {
+		$('#chart').empty();
+		if (new_data === undefined) {new_data = data;}
+		if (new_size === undefined) {new_size = def_size;}
+		if (new_group === undefined) {new_group = def_group;}
+		
+		var width = Math.max(document.documentElement.clientWidth*h_border, window.innerWidth*h_border || 0);
+		var height = Math.max(document.documentElement.clientHeight*v_border, window.innerHeight*v_border || 0);
+		var centers = getCenters(new_data, new_group, [width, height]);
+		
+		var svg = d3.select("#chart").append("svg")
+		.attr("width", width)
+		.attr("height", height);
+
+		var max = d3.max(_.pluck(new_data, new_size));
+          
+		for (var j = 0; j < new_data.length; j++) {
+			new_data[j].radius = (new_size != '') ? radius * (new_data[j][new_size] / max) : 15;
+			new_data[j].x = new_data[j].x ? new_data[j].x : Math.random() * width;
+			new_data[j].y = new_data[j].y ? new_data[j].y : Math.random() * height;
+		}
+		
+		var nodes = svg.selectAll("circle")
+			.data(new_data);
+		
+		svg.selectAll(".label")
+			.data(centers).enter().append("text")
+			.attr("class", "label")
+			.text(function (d) { return d.name })
+			.attr("transform", function (d) {
+				return "translate(" + (d.x + (d.dx / 2) - 100) + ", " + (d.y + 20) + ")";
+			});
+		
+		var force = d3.layout.force()
+			.on("tick", tick(centers, new_group, new_data, nodes));
+
+		nodes.enter().append("circle")
+		.attr("class", "node")
+		.attr("cx", function (d) { return d.x; })
+		.attr("cy", function (d) { return d.x; })
+		.attr("r", function (d) { return d.radius; })
+		.style("fill", allocateColor(def_color))
+		.on("mouseover", function (d) { showPopover.call(this, d); })
+		.on("mouseout", function (d) { removePopovers(); })
+		;
+		
+		force.start();
+		data = new_data // Save current data for next time
+	};
+	
+	function changeSize(data, size, width, height) {
+		var max = d3.max(_.pluck(data, size));
+
+		d3.selectAll("circle")
+		.data(getDataMapping(data, size))
+		.transition()
+		.attr('r', function(d, i) { return val ? (radius * (data[i][val] / max)) : 15 })
+		.attr('cx', function(d) { return d.x })
+		.attr('cy', function(d) { return d.y })
+
+		force.start();
+	};
+	
+	function allocateColor(val) {
+		d3.selectAll("circle")
+		.transition()
+		.style('fill', function(d) { return val ? colors[val][d[val]] : colors['default'] })
+		.duration(1000);
+	};
+
+	function getCenters(data, vname, size) {
+		var centers, map;
+		centers = _.uniq(_.pluck(data, vname)).map(function (d) {
+			return {name: d, value: 1};
+		});
+          
+		map = d3.layout.treemap().size(size).ratio(1/1);
+		map.nodes({children: centers});
+		return centers;
+	};	
+
+	function tick (centers, varname, data, nodes) {
+		var foci = {};
+		for (var i = 0; i < centers.length; i++) {
+			foci[centers[i].name] = centers[i];
+		}
+		return function (e) {
+			for (var i = 0; i < data.length; i++) {
+				var o = data[i];
+				var f = foci[o[varname]];
+				o.y += ((f.y + (f.dy / 2)) - o.y) * e.alpha * 0.4;
+				o.x += ((f.x + (f.dx / 2)) - o.x) * e.alpha * 0.4;
+			}
+			nodes.each(collide(0.2, data))
+			.attr("cx", function (d) { return d.x; })
+			.attr("cy", function (d) { return d.y; });
+		}
+	};
+
+	function removePopovers () {
+		$('.popover').each(function() {
+			$(this).remove();
+		}); 
+	}
+		
+	function showPopover (d) {
+		$(this).popover({
+			placement: 'auto top',
+			container: 'body',
+			trigger: 'manual',
+			html : true,
+			content: function() { 
+                return "<h4>" + d.Topic + "</h4><br />" +
+                "<strong>Training Method: </strong>" + d.Category + "<br />" +
+                "<strong>Field: </strong>" + d.Field + "<br />" +
+                "<strong>Strength: </strong>" + d.Level + "<br />" +
+  			  	"<strong>Experience: </strong>" + d.Experience;
+			}
+		});
+		$(this).popover('show')
+	}
+
+	function collide(alpha, data) {
+		var quadtree = d3.geom.quadtree(data);
+		var maxRadius = d3.max(_.pluck(data, 'radius'));
+		return function (d) {
+			var r = d.radius + maxRadius + padding,
+			nx1 = d.x - r,
+			nx2 = d.x + r,
+			ny1 = d.y - r,
+			ny2 = d.y + r;
+			quadtree.visit(function(quad, x1, y1, x2, y2) {
+				if (quad.point && (quad.point !== d)) {
+					var x = d.x - quad.point.x,
+					y = d.y - quad.point.y,
+					l = Math.sqrt(x * x + y * y),
+					r = d.radius + quad.point.radius + padding;
+					if (l < r) {
+						l = (l - r) / l * alpha;
+						d.x -= x *= l;
+						d.y -= y *= l;
+						quad.point.x += x;
+						quad.point.y += y;
+					}
+				}
+				return x1 > nx2 || x2 < nx1 || y1 > ny2 || y2 < ny1;
+			});
+		};
+	}
+		
+	</script>
+</body>
+</html>

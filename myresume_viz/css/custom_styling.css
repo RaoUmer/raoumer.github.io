@@ -1,0 +1,46 @@
+html, body {
+	overflow:hidden;
+}
+circle {
+	stroke: #555;
+	stroke-width: 1px;
+	opacity: 0.8;
+}
+circle:hover {
+	stroke:#000;
+	opacity:0.9;
+}
+.btn-group {
+	margin-left: 330px;
+}
+.label {
+	font-size: 20px;
+}
+.color-legend {
+	min-height: 100%; 
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	height:34px; 
+	font-weight:bold; 
+	text-align:center; 
+	color:white;
+	text-shadow: 2px 2px #333;
+}
+.row {
+	width: 135px;
+	border: 1px solid black;
+	float: left;
+	margin-right: 1%;
+	margin-left: 5%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 10px;
+	background-color: #efefef;
+}
+#chart {
+	width: 70%;
+	float: left;
+	border: 1px solid black;
+	margin-top: 19px;
+}
