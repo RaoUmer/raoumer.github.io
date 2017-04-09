@@ -1,0 +1,137 @@
+[
+		{
+			"Topic":"Microeconomics I",
+    		"Category":"Formal Education",
+    		"Level":"Beginner",
+    		"Field":"Economics",
+    		"Start_Date":"1-Mar-01",
+    		"Time":22,
+    		"Age":175
+		},
+  {
+    "Topic":"MS Excel",
+    "Category":"Self Taught",
+    "Level":"Advanced",
+    "Field":"Data Science/Statistics",
+    "Start_Date":"16-Dec-12",
+    "Time":500,
+    "Age":129
+  },
+  {
+    "Topic":"Algorithms for Data Mining",
+    "Category":"Formal Education",
+    "Level":"Graduate",
+    "Field":"Data Science/Statistics",
+    "Start_Date":"1-Aug-15",
+    "Time":22,
+    "Age":43
+  },
+  {
+    "Topic":"Project Management",
+    "Category":"On-the-Job",
+    "Level":"Intermediate",
+    "Field":"Project Management",
+    "Start_Date":"1-Mar-15",
+    "Time":100,
+    "Age":31
+  },
+  {
+    "Topic":"SQL Server",
+    "Category":"Self Taught",
+    "Level":"Advanced",
+    "Field":"Data Science/Statistics",
+    "Start_Date":"1-Mar-14",
+    "Time":100,
+    "Age":31
+  },
+  {
+    "Topic":"Agile Development",
+    "Category":"On-the-Job",
+    "Level":"Intermediate",
+    "Field":"Project Management",
+    "Start_Date":"1-Sep-13",
+    "Time":30,
+    "Age":25
+  },
+  {
+    "Topic":"Weka",
+    "Category":"Self Taught",
+    "Level":"Intermediate",
+    "Field":"Data Science/Statistics",
+    "Start_Date":"1-Feb-15",
+    "Time":15,
+    "Age":20
+  },
+  {
+    "Topic":"MS Access",
+    "Category":"Self Taught",
+    "Level":"Intermediate",
+    "Field":"Data Science/Statistics",
+    "Start_Date":"1-Jun-12",
+    "Time":30,
+    "Age":16
+  },
+  {
+    "Topic":"HTML",
+    "Category":"Self Taught",
+    "Level":"Advanced",
+    "Field":"Computer Science/Web Development",
+    "Start_Date":"1-Mar-12",
+    "Time":8,
+    "Age":7
+  },
+  {
+    "Topic":"Blogging",
+    "Category":"Self Taught",
+    "Level":"Intermediate",
+    "Field":"Computer Science/Web Development",
+    "Start_Date":"1-Apr-14",
+    "Time":20,
+    "Age":7
+  },
+  {
+    "Topic":"CSS",
+    "Category":"Self Taught",
+    "Level":"Beginner",
+    "Field":"Computer Science/Web Development",
+    "Start_Date":"1-Mar-12",
+    "Time":8,
+    "Age":7
+  },
+  {
+    "Topic":"Python",
+    "Category":"Formal Education",
+    "Level":"Advanced",
+    "Field":"Computer Science/Web Development",
+    "Start_Date":"1-Jan-15",
+    "Time":22,
+    "Age":6
+  },
+  {
+    "Topic":"Initiating and Planning Projects",
+    "Category":"Self Taught",
+    "Level":"Intermediate",
+    "Field":"Project Management",
+    "Start_Date":"1-Jan-15",
+    "Time":6,
+    "Age":4
+  },
+  {
+    "Topic":"Regression Models",
+    "Category":"Formal Education",
+    "Level":"Intermediate",
+    "Field":"Data Science/Statistics",
+    "Start_Date":"3-Oct-15",
+    "Time":4,
+    "Age":2
+  },
+  {
+    "Topic":"Machine Learning",
+    "Category":"Formal Education",
+    "Level":"Advanced",
+    "Field":"Data Science/Statistics",
+    "Start_Date":"1-Sep-15",
+    "Time":4,
+    "Age":0
+  }
+]
