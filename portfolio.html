@@ -9,7 +9,9 @@
 	<meta name="apple-mobile-web-app-capable" content="yes">
 	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	<link rel="apple-touch-icon" sizes="57x57" href="../assets/img/apple-touch-icon-57x57.png?v=wAAv6Wqe6l">
 	<link rel="apple-touch-icon" sizes="60x60" href="../assets/img/apple-touch-icon-60x60.png?v=wAAv6Wqe6l">
 	<link rel="apple-touch-icon" sizes="72x72" href="../assets/img/apple-touch-icon-72x72.png?v=wAAv6Wqe6l">
@@ -221,35 +223,74 @@
 	     <br>
 	    <h2> <strong>Portfolio </strong></h2>
 	    <p> Here is the portfolio of my current and past projects:</p>
-      <div class="banner">
-            <ul>
-		<li>
-                <a href="http://raoumer.github.io/dwx/" target="_blank"><img src="images/dwx.png" alt="Deep Web Extractor" draggable="false" width="166" height="110"/></a>
-                <p><a href="https://github.com/RaoUmer/dwx" target="_blank" class="btn">GitHub</a><br /> Deep Web Extractor</p>
-              </li>    
-            	<li>
-                <a href="http://doccategorypredictor.herokuapp.com/" target="_blank"><img src="images/doccatpred.png" alt="Docs Category Predictor" draggable="false" width="166" height="110"/></a>
-                <p><a href="https://github.com/RaoUmer/document-category-predictor" target="_blank" class="btn">GitHub</a><br /> Document Category Predictor Webapp</p>
-              </li>
-             <li>
-                <a href="http://raoumer.github.io/docs_classification/" target="_blank"><img src="images/docs_classification.png" alt="Docs Classification" draggable="false" width="166" height="110"/></a>
-                <p><a href="http://raoumer.github.io/docs_classification/" target="_blank" class="btn">GitHub</a><br />Documents and Webpages Classification using Machine Learning</p>
-              </li>
-               <li>
-                <a href="http://raoumer.github.io/GPU-Workshop-PIEAS-2016/" target="_blank"><img src="images/regr.png" alt="Regression" draggable="false" width="166" height="110"/></a>
-                <p><a href="http://raoumer.github.io/GPU-Workshop-PIEAS-2016/" target="_blank" class="btn">GitHub</a><br />House Prices Prediction using Linear/Multiple Regression on GPU</p>
-              </li>
-            <li>
-                <a href="http://raoumer.github.io/school_grades_prediction_ML/" target="_blank"><img src="images/pred_school_grades.png" alt="Prediction School Grades" draggable="false" width="166" height="110"/></a>
-                <p><a href="http://raoumer.github.io/school_grades_prediction_ML/" target="_blank" class="btn">GitHub</a><br />School Grades Prediction Competition Project</p>
-              </li>
-              <li>
-                <a href="https://github.com/RaoUmer/" target="_blank"><img src="images/github.png" alt="My GitHub" draggable="false" width="166" height="110"/></a>
-                <p><a href="https://github.com/RaoUmer/" target="_blank" class="btn">GitHub</a><br /> My Public GitHub repository contains many of my past and current projects</p>
-              </li>  
-            </ul>
-          </div>
-          <br/>
+          <div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+	  <li data-target="#myCarousel" data-slide-to="3"></li>
+	  <li data-target="#myCarousel" data-slide-to="4"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="images/dwx.jpg" alt="Deep Web Extractor" style="width:100%;">
+        <div class="carousel-caption"> 
+			<h3> Deep Web Extractor System</h3>
+          <p><h2><a href = "http://raoumer.github.io/dwx">Click Here!</a></h2></p>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="images/docsclassification.jpg" alt="Documents Classification" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Document's Category Predictor Webapp</h3>
+		  <p><h2><a href = "http://doccategorypredictor.herokuapp.com/">Click Here!</a></h2></p>
+        </div>
+      </div>
+	  
+	  <div class="item">
+        <img src="images/webpages.jpg" alt="Webpages Classification" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Webpages Classification using Supervised Machine Learning</h3>
+		  <p><h2><a href = "http://raoumer.github.io/docs_classification/">Click Here!</a></h2></p>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src="images/regr.jpg" alt="Regression on GPU" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>Regression(Linear and Multi-variate) Implementation on GPU</h3>
+          <p><h2><a href = "http://raoumer.github.io/GPU-Workshop-PIEAS-2016/">Click Here!</a></h2></p>
+        </div>
+      </div>
+	  
+	  <div class="item">
+        <img src="schoolgrades.jpg" alt="New York" style="width:100%;">
+        <div class="carousel-caption">
+          <h3>School Grades Prediction using Supervised Machine Learning</h3>
+          <p><h2><a href = "http://raoumer.github.io/school_grades_prediction_ML/">Click Here!</a></h2></p>
+        </div>
+      </div>
+  
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+	  <br/>
           <br/>
 	  <p>Here is the list of my core competencies of coding skills:</p>
            	<strong>Python | C/C++ | Java | Bash Scripting | Latex</strong>
