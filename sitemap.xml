@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- Website sitemap -->
+
+<url>
+  <loc>http://raoumer.com/</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/about.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/courses.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/portfolio.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/contact.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/blog_posts/data_sources.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/blog_posts/data_science_resources.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/blog_posts/machine_learning_resources.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/blog_posts/deep_learning_resources.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/blog_posts/ml_research_problems.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/index2.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/sop.pdf</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/resume.pdf</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/dwx/</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/ms_thesis_rao_umer.pdf</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/BSc_technical_report.pdf</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/docs_classification/</loc>
+  <lastmod>2016-05-04T16:55:15+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/GPU-Workshop-PIEAS-2016/</loc>
+  <lastmod>2016-05-28T13:25:35+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/school_grades_prediction_ML/</loc>
+  <lastmod>2016-05-04T13:48:44+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/FIeldGuideToDataScience.pdf</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/PRACTICAL_DATA_ANALYSIS.pdf</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/Alpaydin_2010_Introduction%20to%20machine%20learning.pdf</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/BUILDING_MACHINE_LEARNING_SYSTEMS_WITH_PYTHON.pdf</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/blog_posts/building_ML_model.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/blog_posts/ds_industry_roles.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/blog_posts/webappdev.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/blog_posts/deep_web.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/blog_posts/researchers_in_pak.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/index.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/dwx/dwx_presentation.pdf</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/blog_posts/docs_classification_ML.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+<url>
+  <loc>http://raoumer.com/blog_posts/deep_web2.html</loc>
+  <lastmod>2017-07-30T07:05:50+00:00</lastmod>
+</url>
+</urlset>
