@@ -490,7 +490,7 @@ function handleEscKey() {
 
 function handleTyping () {
   $(".element").typed({
-    strings: ["a Lecturer at The University of Lahore","a Data Scientist", "a Machine Learning Practitioner","a Deep Learning Practitioner", "an AI enthusiast"],
+    strings: ["a Lecturer at The University of Lahore", "a Machine Learning Practitioner","a Deep Learning Practitioner", "an AI enthusiast"],
     typeSpeed: 50,
     starDelay: 200,
     backDelay: 600,
