@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>http://raoumer.github.io/</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/about.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/courses.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/portfolio.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/contact.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/data_sources_part_2.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/data_science_resources.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/machine_learning_resources.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/deep_learning_resources.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/data_sources.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/ml_research_problems.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/index2.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/sop.pdf</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/resume.pdf</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/skillbarviz/</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/computer_vision_resources.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/bibliographic_tools.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/programming.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/tools.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/dwx/</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/ms_thesis_rao_umer.pdf</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/BSc_technical_report.pdf</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/docs_classification/</loc>
+  <lastmod>2016-05-04T16:55:15+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/GPU-Workshop-PIEAS-2016/</loc>
+  <lastmod>2016-05-28T13:25:35+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/school_grades_prediction_ML/</loc>
+  <lastmod>2016-05-04T13:48:44+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/building_ML_model.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/ds_industry_roles.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/webappdev.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/deep_web.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/index.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/dwx/dwx_presentation.pdf</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/docs_classification_ML.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+<url>
+  <loc>http://raoumer.github.io/blog_posts/deep_web2.html</loc>
+  <lastmod>2019-01-03T21:03:38+00:00</lastmod>
+  <priority>0.51</priority>
+</url>
+
+
+</urlset>
