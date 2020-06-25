@@ -216,12 +216,47 @@
 	
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 	<tbody>
-		<tr onmouseout="srrescgan_stop()" onmouseover="srrescgan_start()"  bgcolor="#ffffd0">
+	   <tr onmouseout="isrrescnet_stop()" onmouseover="isrrescnet_start()" >
+            <td style="padding:20px;width:25%;vertical-align:middle">
+             <div class="one">
+                <div class="two" id='isrrescnet_image'>
+                  <img src='images/isrrescnet.gif' width="230"></div>
+                <img src='images/isrrescnet.gif' width="230">
+              </div>
+              <script type="text/javascript">
+                function isrrescnet_start() {
+                  document.getElementById('isrrescnet_image').style.opacity = "1";
+                }
+
+                function isrrescnet_stop() {
+                  document.getElementById('isrrescnet_image').style.opacity = "0";
+                }
+                isrrescnet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="#">
+                <papertitle>ISRResCNet: Deep Iterative Residual Convolutional Network for Single Image Super-Resolution</papertitle>
+              </a>
+              <br>
+              <strong>Rao Muhammad Umer</strong>,
+              <a href="https://scholar.google.com/citations?user=GZ_3WZAAAAAJ&hl=en">Gian Luca Foresti</a>,
+              <a href="https://scholar.google.com/citations?user=Gbnq0F8AAAAJ&hl=en">Christian Micheloni</a>
+              <br>
+			  <em>ICPR</em>, 2020  
+              <br>
+              <a href="#">arXiv</a>
+              <p></p>
+              <p>
+              Training the ISRResCNet network in an iterative manner with a residual learning approach for super-resolution to follow the image observation (physical) model.</p>
+            </td>
+          </tr>
+	   <tr onmouseout="srrescgan_stop()" onmouseover="srrescgan_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
              <div class="one">
                 <div class="two" id='srrescgan_image'>
-                  <img src='images/crop_lr.png' width="162"></div>
-                <img src='images/crop_srrescgan_plus.png' width="162">
+                  <img src='images/srrescgan.gif' width="230"></div>
+                <img src='images/srrescgan.gif' width="230">
               </div>
               <script type="text/javascript">
                 function srrescgan_start() {
@@ -264,8 +299,8 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
              <div class="one">
                 <div class="two" id='srwdnet_image'>
-                  <img src='images/crop_srwdnet.png' width="160"></div>
-                <img src='images/crop_input.png' width="160">
+                  <img src='images/srwdnet.gif' width="230"></div>
+                <img src='images/srwdnet.gif' width="230">
               </div>
               <script type="text/javascript">
                 function srwdnet_start() {
