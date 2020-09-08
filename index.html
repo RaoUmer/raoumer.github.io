@@ -224,6 +224,50 @@
 	-->
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 	<tbody>
+	   <tr onmouseout="srrescycgan_stop()" onmouseover="srrescycgan_start()"  bgcolor="#ffffd0">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+             <div class="one">
+                <div class="two" id='srrescycgan_image'>
+                  <img src='images/srrescycgan.gif' width="230"></div>
+                <img src='images/srrescycgan.gif' width="230">
+              </div>
+              <script type="text/javascript">
+                function srrescycgan_start() {
+                  document.getElementById('srrescycgan_image').style.opacity = "1";
+                }
+
+                function srrescycgan_stop() {
+                  document.getElementById('srrescycgan_image').style.opacity = "0";
+                }
+                srrescycgan_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="#">
+                <papertitle>SRResCycGAN: Deep Cyclic Generative Adversarial Residual Convolutional Networks for Real-Image Super-Resolution</papertitle>
+              </a>
+              <br>
+              <strong>Rao Muhammad Umer</strong>,
+              <a href="https://scholar.google.com/citations?user=Gbnq0F8AAAAJ&hl=en">Christian Micheloni</a>
+              <br>
+			  <em>ECCV</em>, 2020 &nbsp <font color="red"><strong>(Participated in the AIM2020 Real-Image SR challenge)</strong></font> 
+              <br>
+              <a href="#">arXiv</a>
+	       			/
+	      <a href="#">RISR-Challenge-Report</a>
+				/
+              <a href="https://github.com/RaoUmer/SRResCycGAN">code</a>
+	       			/
+	      <a href="https://youtu.be/QD3yhDpG4Lo">video</a>
+	      <br> <br>
+	      <a class="github-button" href="https://github.com/RaoUmer/SRResCycGAN" data-icon="octicon-star" data-show-count="true" aria-label="Star SRResCycGAN on GitHub">Star</a>
+	      <a class="github-button" href="https://github.com/RaoUmer/SRResCycGAN/fork" data-icon="octicon-repo-forked" data-show-count="true" aria-label="Fork SRResCycGAN on GitHub">Fork</a>
+              <p></p>
+              <p>
+              Training the SRResCycGAN network for Real-Image Super-Resolution with a generative adversarial network (GAN) framework for the LR to HR domain translation in an end-to-end manner.</p>
+            </td>
+          </tr> 
+	   
 	   <tr onmouseout="isrrescnet_stop()" onmouseover="isrrescnet_start()" >
             <td style="padding:20px;width:25%;vertical-align:middle">
              <div class="one">
@@ -286,9 +330,11 @@
               <a href="https://scholar.google.com/citations?user=GZ_3WZAAAAAJ&hl=en">Gian Luca Foresti</a>,
               <a href="https://scholar.google.com/citations?user=Gbnq0F8AAAAJ&hl=en">Christian Micheloni</a>
               <br>
-			  <em>CVPRW</em>, 2020  &nbsp <font color="red"><strong>(Participated in the Ntire RWSR challenge, <a href="https://arxiv.org/abs/2005.01996">Technical Report</a>)</strong></font>
+			  <em>CVPR</em>, 2020  &nbsp <font color="red"><strong>(Participated in the Ntire2020 RWSR challenge)</strong></font>
               <br>
               <a href="https://arxiv.org/abs/2005.00953">arXiv</a>
+				/
+	      <a href="https://arxiv.org/abs/2005.01996">RWSR-Challenge-Report</a>
 				/
               <a href="https://github.com/RaoUmer/SRResCGAN">code</a>
 	      			/
