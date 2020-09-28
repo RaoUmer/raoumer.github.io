@@ -224,7 +224,44 @@
 	-->
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 	<tbody>
-	   <tr onmouseout="srrescycgan_stop()" onmouseover="srrescycgan_start()"  bgcolor="#ffffd0">
+	    <tr onmouseout="isrresdnet_stop()" onmouseover="isrresdnet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+             <div class="one">
+                <div class="two" id='isrresdnet_image'>
+                  <img src='images/isrresdnet.gif' width="230"></div>
+                <img src='images/isrresdnet.gif' width="230">
+              </div>
+              <script type="text/javascript">
+                function srrescycgan_start() {
+                  document.getElementById('isrresdnet_image').style.opacity = "1";
+                }
+
+                function srrescycgan_stop() {
+                  document.getElementById('isrresdnet_image').style.opacity = "0";
+                }
+                srrescycgan_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="#">
+                <papertitle>ISRResDNet: A Light-weight Deep Iterative Residual Convolutional Network for Super-Resolution</papertitle>
+              </a>
+              <br>
+              <strong>Rao Muhammad Umer</strong>,
+              <a href="https://scholar.google.com/citations?user=Gbnq0F8AAAAJ&hl=en">Christian Micheloni</a>
+              <br>
+			  <em>ECCV</em>, 2020  
+              <br>
+              <a href="https://drive.google.com/file/d/1HLW2DW6zn-XjgFAJojA4wbjLUrnlC6Z4/view?usp=sharing">Factsheet</a>
+				/
+              <a href="https://arxiv.org/abs/2009.06943">Efficient-SR-Challenge-Report </a> <br> <br>
+              <p></p>
+              <p>
+              Training the ISRResDNet for Efficient Super-Resolution that solves the SR task as a sub-solver of the image denoising by the residual denoiser networks.</p>
+            </td>
+          </tr>
+		
+	    <tr onmouseout="srrescycgan_stop()" onmouseover="srrescycgan_start()"  bgcolor="#ffffd0">
             <td style="padding:20px;width:25%;vertical-align:middle">
              <div class="one">
                 <div class="two" id='srrescycgan_image'>
