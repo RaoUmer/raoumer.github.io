@@ -9,6 +9,29 @@ a:hover {
   text-decoration: none;
 }
 
+.button.is-small{border-radius:2px;font-size:.75rem}
+.button.is-rounded{border-radius:290486px;padding-left:calc(1em + .25em);padding-right:calc(1em + .25em)}
+.button.is-dark{background-color:#363636;border-color:transparent;color:#fff}
+.button.is-normal{font-size:1rem}
+.button.is-medium{font-size:1.25rem}
+.button.is-large{font-size:1.5rem}
+.button[disabled],fieldset[disabled] 
+.button{background-color:#fff;border-color:#dbdbdb;box-shadow:none;opacity:.5}
+
+.link-block a {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.button {
+  padding: 6px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
 body,
 td,
 th,
