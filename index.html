@@ -227,6 +227,60 @@
 	-->
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 	<tbody>
+	    <tr onmouseout="bsricnn_stop()" onmouseover="bsricnn_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+             <div class="one">
+                <div class="two" id='bsricnn_image'>
+                  <img src='images/bsricnn.png' width="230"></div>
+                <img src='images/bsricnn.png' width="230">
+              </div>
+              <script type="text/javascript">
+                function bsricnn_start() {
+                  document.getElementById('bsricnn_image').style.opacity = "1";
+                }
+
+                function bsricnn_stop() {
+                  document.getElementById('bsricnn_image').style.opacity = "0";
+                }
+                bsricnn_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="#">
+                <papertitle>BSRICNN: Deep Iterative Convolutional Neural Network for Raw Burst Super-Resolution</papertitle>
+              </a>
+              <br>
+              <strong>Rao Muhammad Umer</strong>,
+              <a href="https://scholar.google.com/citations?user=Gbnq0F8AAAAJ&hl=en">Christian Micheloni</a>
+              <br>
+			  <em>CVPR</em>, 2021 &nbsp <font color="red"><strong>(Participated in the NTIRE 2021 Burst SR challenge)</strong></font>  
+              <br><br>
+	      <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://drive.google.com/file/d/1whc57pSLHbTATwEOQz0zQChhmKUx6B4N/view?usp=sharing"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Factsheet</span>
+                </a>
+              </span>
+	       <!-- PDF Link. -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/2106.03839"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>Burst-SR-Report</span>
+                </a>
+              </span>
+              <p></p>
+              <p>
+              Training the BSRICNN for Burst Super-Resolution that solves the Burst SR task by iterative refinement of the intermediate SR estimates.</p>
+            </td>
+          </tr>
+	
 	    <tr onmouseout="isrresdnet_stop()" onmouseover="isrresdnet_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
              <div class="one">
@@ -235,18 +289,18 @@
                 <img src='images/isrresdnet.gif' width="230">
               </div>
               <script type="text/javascript">
-                function srrescycgan_start() {
+                function isrresdnet_start() {
                   document.getElementById('isrresdnet_image').style.opacity = "1";
                 }
 
-                function srrescycgan_stop() {
+                function isrresdnet_stop() {
                   document.getElementById('isrresdnet_image').style.opacity = "0";
                 }
-                srrescycgan_stop()
+                isrresdnet_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="#">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-030-67070-2_1">
                 <papertitle>ISRResDNet: A Light-weight Deep Iterative Residual Convolutional Network for Super-Resolution</papertitle>
               </a>
               <br>
@@ -300,7 +354,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="#">
+              <a href="https://link.springer.com/chapter/10.1007%2F978-3-030-67070-2_29">
                 <papertitle>SRResCycGAN: Deep Cyclic Generative Adversarial Residual Convolutional Networks for Real-Image Super-Resolution</papertitle>
               </a>
               <br>
@@ -383,7 +437,7 @@
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="#">
+              <a href="https://ieeexplore.ieee.org/abstract/document/9412159">
                 <papertitle>ISRResCNet: Deep Iterative Residual Convolutional Network for Single Image Super-Resolution</papertitle>
               </a>
               <br>
