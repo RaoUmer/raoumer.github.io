@@ -227,6 +227,61 @@
 	-->
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 	<tbody>
+	    <tr onmouseout="srresstargan_stop()" onmouseover="srresstargan_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+             <div class="one">
+                <div class="two" id='srresstargan_image'>
+                  <img src='images/srresstargan.gif' width="230"></div>
+                <img src='images/srresstargan.gif' width="230">
+              </div>
+              <script type="text/javascript">
+                function srresstargan_start() {
+                  document.getElementById('srresstargan_image').style.opacity = "1";
+                }
+
+                function srresstargan_stop() {
+                  document.getElementById('srresstargan_image').style.opacity = "0";
+                }
+                srresstargan_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="#">
+                <papertitle>SR<sup>2*</sup>GAN: A Deep Residual Star Generative Adversarial Network for multi-domain Image Super-Resolution</papertitle>
+              </a>
+              <br>
+              <strong>Rao Muhammad Umer</strong>,
+			  <a href="#">Asad Munir</a>,
+              <a href="https://scholar.google.com/citations?user=Gbnq0F8AAAAJ&hl=en">Christian Micheloni</a>
+              <br>
+			  <em>SPLITECH</em>, 2021 &nbsp <font color="red"><strong>(To be appeared)</strong></font> 
+              <br><br>
+	      <!-- PDF Link. -->
+	      <span class="link-block">
+              <a href="https://arxiv.org/abs/2107.03145" class="external-link button is-normal is-rounded is-dark">
+		<span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                </span>
+              <span>Paper</span>
+		</a>
+	      </span>
+               <!-- Video Link. -->
+             <!--  <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+	      <br> <br>
+		  <p></p>
+          <p>
+              Training the SR<sup>2*</sup>GAN in a StarGAN like network topology with a single model to super-resolves the LR images for the multiple LR domains.</p>
+            </td>
+          </tr> 
+		
 	    <tr onmouseout="bsricnn_stop()" onmouseover="bsricnn_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
              <div class="one">
