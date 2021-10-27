@@ -227,6 +227,69 @@
 	-->
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 	<tbody>
+	    <tr onmouseout="rbsricnn_stop()" onmouseover="rbsricnn_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+             <div class="one">
+                <div class="two" id='rbsricnn_image'>
+                  <img src='images/rbsricnn.gif' width="230"></div>
+                <img src='images/rbsricnn.gif' width="230">
+              </div>
+              <script type="text/javascript">
+                function rbsricnn_start() {
+                  document.getElementById('rbsricnn_image').style.opacity = "1";
+                }
+
+                function rbsricnn_stop() {
+                  document.getElementById('rbsricnn_image').style.opacity = "0";
+                }
+                rbsricnn_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="#">
+                <papertitle>RBSRICNN: Raw Burst Super-Resolution through Iterative Convolutional Neural Network</papertitle>
+              </a>
+              <br>
+              <strong>Rao Muhammad Umer</strong>,
+              <a href="https://scholar.google.com/citations?user=Gbnq0F8AAAAJ&hl=en">Christian Micheloni</a>
+              <br>
+	      <em>NeurIPS</em>, 2021 &nbsp <font color="red"><strong>(To be appeared in the Machine Learning and Physical Sciences workshop)</strong></font> 
+              <br><br>
+	      <!-- PDF Link. -->
+	      <span class="link-block">
+              <a href="https://arxiv.org/abs/2110.13217" class="external-link button is-normal is-rounded is-dark">
+		<span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                </span>
+              <span>Paper</span>
+		</a>
+	      </span>
+	      <!-- Code Link. -->
+	      <span class="link-block">
+              <a href="https://github.com/RaoUmer/RBSRICNN" class="external-link button is-normal is-rounded is-dark">
+		<span class="icon">
+                      <i class="fab fa-github"></i>
+                </span>
+              <span>code</span>
+	      </a>
+	      </span>
+               <!-- Video Link. 
+              <span class="link-block">
+                <a href="#"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a> 
+              </span> -->
+	      <br> <br>
+		  <p></p>
+          <p>
+              Training the RBSRICNN for Raw Burst Super-Resolution task that restore the clean RGB SR image by following the burst photography pipeline as a whole by a forward (physical) model.</p>
+            </td>
+          </tr> 
+		
 	    <tr onmouseout="srresstargan_stop()" onmouseover="srresstargan_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
              <div class="one">
