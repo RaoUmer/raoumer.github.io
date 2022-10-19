@@ -228,6 +228,49 @@
 	<h2><strong>Conference Publications</strong></h2>
 	<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
 	<tbody>
+	    <tr onmouseout="srrescsingan_stop()" onmouseover="srrescsingan_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+             <div class="one">
+                <div class="two" id='srrescsingan_image'>
+                  <img src='images/srrescsingan.gif' width="230"></div>
+                <img src='images/srrescsingan.gif' width="230">
+              </div>
+              <script type="text/javascript">
+                function srrescsingan_start() {
+                  document.getElementById('srrescsingan_image').style.opacity = "1";
+                }
+
+                function srrescsingan_stop() {
+                  document.getElementById('srrescsingan_image').style.opacity = "0";
+                }
+                srrescsingan_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="#">
+                <papertitle>SRResCSinGAN: Real Image Super-Resolution using GAN through modeling of LR and HR process</papertitle>
+              </a>
+              <br>
+              <strong>Rao Muhammad Umer</strong>,
+              <a href="https://scholar.google.com/citations?user=Gbnq0F8AAAAJ&hl=en">Christian Micheloni</a>
+              <br>
+	      <em>AVSS</em>, 2022 &nbsp <font color="red"><strong>(Appeared in 18th IEEE International Conference on Advanced Video and Signal Based Surveillance (AVSS))</strong></font> 
+              <br><br>
+	      <!-- PDF Link. -->
+	      <span class="link-block">
+              <a href="#" class="external-link button is-normal is-rounded is-dark">
+		<span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                </span>
+              <span>Paper</span>
+		</a>
+	      </span>
+	      <p></p>
+          <p>
+              Training the GAN-based SRResCSinGAN with learnable adaptive sinusoidal nonlinearities incorporated in LR and SR models by directly learn degradation distributions and then synthesize paired LR/HR training data to train the generalized SR model to real image degradations.</p>
+            </td>
+          </tr> 
+		
 	    <tr onmouseout="aml_cls_stop()" onmouseover="aml_cls_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
              <div class="one">
