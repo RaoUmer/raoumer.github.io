@@ -940,6 +940,52 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
              <div class="one">
                 <div class="two" id='sl_gl_image'>
+                  <img src='images/mdfl.png' width="230"></div>
+                <img src='images/mdfl.png' width="230">
+              </div>
+              <script type="text/javascript">
+                function sl_gl_start() {
+                  document.getElementById('sl_gl_image').style.opacity = "1";
+                }
+
+                function sl_gl_stop() {
+                  document.getElementById('sl_gl_image').style.opacity = "0";
+                }
+                sl_gl_stop()
+              </script>
+            </td>
+		   
+	   <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://iopscience.iop.org/article/10.1088/2632-2153/ad4768/pdf">
+                <papertitle>Exploiting data diversity in multi-domain federated learning</papertitle>
+              </a>
+              <br>
+	      <a href="https://scholar.google.com/citations?user=A4BzsdYAAAAJ">Hussain Ahmad Madni</a>,
+              <strong>Rao Muhammad Umer</strong>,
+	      <a href="https://scholar.google.com/citations?user=GZ_3WZAAAAAJ&hl=en">Gian Luca Foresti</a>
+              <br>
+	         <em>IEEE Access</em>, 2023
+              <br><br>
+	       <!-- PDF Link. -->
+	      <span class="link-block">
+              <a href="https://iopscience.iop.org/article/10.1088/2632-2153/ad4768/pdf" class="external-link button is-normal is-rounded is-dark">
+		<span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                </span>
+              <span>Paper</span>
+		</a>
+              <p></p>
+              <p>
+              In this work, we trained the robust vision transformer model by using two loss functions, one for correctly predicting class labels and other
+              for encouraging similarity and dissimilarity over latent features. We tackle data heterogeneity in Federated learning with different domains 
+	      of heterogeneous data by raising the problems of domain-shift, class-imbalance, and missing data. </p>
+            </td>
+          </tr>
+
+	<tr onmouseout="sl_gl_stop()" onmouseover="sl_gl_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+             <div class="one">
+                <div class="two" id='sl_gl_image'>
                   <img src='images/sl_gl.jpg' width="230"></div>
                 <img src='images/sl_gl.jpg' width="230">
               </div>
@@ -978,7 +1024,7 @@
               <p>
               In this work, we proposed the method for Blockchain-Based Swarm Learning for the mitigation of gradient leakage in federated learning. </p>
             </td>
-          </tr> 	  
+          </tr>
           
           <tr onmouseout="sl_fhe_stop()" onmouseover="sl_fhe_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
